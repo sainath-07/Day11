@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        /* background-color: #870000; */
+       background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+      }
+      .container {
+        display: flex;
+        height: 97vh;
+      }
+      label[title="click"] {
+        border: 3px solid black;
+        width: 99%;
+        height: 95%;
+        /* padding: 6% 5%; */
+      }
+      .tbn1:active ~ img {
+        transform: none;
+      }
+      .tbn2:active ~ img {
+        transform: rotate(10deg);
+      }
+      .tbn3:active ~ img {
+        transform: rotate(45deg);
+      }
+      .tbn4:active ~ img {
+        transform: rotatex(45deg);
+      }
+      .tbn5:active ~ img {
+        transform: rotatex(100deg);
+      }
+      .tbn6:active ~ img {
+        transform: rotatey(45deg);
+      }
+      .tbn7:active ~ img {
+        transform: rotatey(45deg);
+      }
+      .tbn8:active ~ img {
+        transform: skew(20deg, 20deg);
+      }
+      .tbn9:active ~ img {
+        transform: skew(30deg, 30deg);
+      }
+      .tbn10:active ~ img {
+        transform: skewX(30deg);
+      }
+      .tbn11:active ~ img {
+        transform: skewX(40deg);
+      }
+      .tbn12:active ~ img {
+        transform: skewY(30deg);
+      }
+      .tbn13:active ~ img {
+        transform: skewY(40deg);
+      }
+      .tbn14:active ~ img {
+        transform: translate(20px, 10px);
+      }
+      .tbn15:active ~ img {
+        transform: translate(20px, 20px);
+      }
+      .tbn16:active ~ img {
+        transform: scale(2, 2);
+      }
+      .tbn17:active + img {
+        transform: scale(2, 3);
+      }
+
+      img {
+        position: fixed;
+        left: 45%;
+        top: 25%;
+        width: 32%;
+        height: 60%;
+      }
+      .buttons {
+        display: grid;
+        flex-direction: column;
+        background-color: tomato;
+        width: 20%;
+        height: 100%;
+        margin-left: 8%;
+        /* margin-top: 5%; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="buttons">
+        <label for="btn1" class="tbn1" title="click"
+          >transform: none;<input id="btn1" name="btn" type="radio" />
+        </label>
+
+        <label for="btn2" class="tbn2" title="click"
+          >transform: rotate(10deg);
+          <input id="btn2" name="btn" type="radio" />
+        </label>
+        <label for="btn3" class="tbn3" title="click"
+          >transform: rotate(45deg);
+          <input id="btn3" name="btn" type="radio" />
+        </label>
+        <label for="btn4" class="btn4" title="click"
+          >transform: rotateX(45deg);
+          <input id="btn4" name="btn" type="radio" />
+        </label>
+        <label for="tbn5" class="tbn5" title="click"
+          >transform: rotateX(100deg);
+          <input id="tbn5" name="btn" type="radio" />
+        </label>
+        <label for="tbn6" class="tbn6" title="click"
+          >transform: rotateY(45deg);
+          <input id="tbn6" name="btn" type="radio" />
+        </label>
+        <label for="tbn7" class="tbn7" title="click"
+          >transform: rotateY(80deg);
+          <input id="tbn7" name="btn" type="radio" />
+        </label>
+        <label for="tbn8" class="tbn8" title="click"
+          >transform: skew(20deg,20deg);
+          <input id="tbn8" name="btn" type="radio" />
+        </label>
+        <label for="tbn9" class="tbn9" title="click"
+          >transform: skew(30deg,30deg);
+          <input id="tbn9" name="btn" type="radio" />
+        </label>
+        <label for="tbn10" class="tbn10" title="click"
+          >transform: skewX(30deg);
+          <input id="tbn10" name="btn" type="radio" />
+        </label>
+        <label for="tbn11" class="tbn11" title="click"
+          >transform: skewX(40deg);
+          <input id="tbn11" name="btn" type="radio" />
+        </label>
+        <label for="tbn12" class="tbn12" title="click"
+          >transform: skewY(30deg);
+          <input id="tbn12" name="btn" type="radio" />
+        </label>
+        <label for="tbn13" class="tbn13" title="click"
+          >transform: skewY(40deg);
+          <input id="tbn13" name="btn" type="radio" />
+        </label>
+        <label for="tbn14" class="tbn14" title="click"
+          >transform: translate(20px,10px);
+          <input id="tbn14" name="btn" type="radio" />
+        </label>
+        <label for="tbn15" class="tbn15" title="click"
+          >transform: translate(20px,20px);
+          <input id="tbn15" name="btn" type="radio" />
+        </label>
+        <label for="tbn16" class="tbn16" title="click"
+          >transform: scale(2,2);
+          <input id="tbn16" name="btn" type="radio" />
+        </label>
+        <label for="tbn17" class="tbn17" title="click"
+          >transform: scale(2,3);
+          <input id="tbn17" name="btn" type="radio" />
+        </label>
+   
+
+        <img src="pedro-lastra-wCujVcf0JDw-unsplash.jpg" alt="" />
+      </div>
+
+      <!-- <div class="image"></div> -->
+    </div>
+  </body>
+</html>
